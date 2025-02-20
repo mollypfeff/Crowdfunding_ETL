@@ -1,5 +1,14 @@
 # Crowdfunding_ETL
+-----------------------
+## Summary
+For this mini-project, our group worked on developing a crowdfunding database by extracting and transforming data from Excel files. The project was broken down into several parts, starting with creating DataFrames for categories, subcategories, campaigns, and contacts. In the first step, we extracted data from the provided Excel file to create a Category DataFrame, assigning unique IDs to each category, and then exported it as a CSV file. Similarly, we created a Subcategory DataFrame, assigning unique IDs to subcategories, and exported it as another CSV file. The next step involved creating the Campaign DataFrame, which included several columns such as "cf_id", "contact_id", "company_name", "goal", "pledged", and other details related to the campaign, while also linking it to the previously created Category and Subcategory DataFrames through foreign key relationships. This DataFrame was then exported as a CSV file.
 
+Next, we worked on the Contacts DataFrame, where we followed one of two approaches—using either Python dictionary methods or regular expressions—to extract and clean data from a provided contacts file, ensuring the data included columns like "contact_id", "first_name", "last_name", and "email". This cleaned data was also saved as a CSV file.
+
+The final step involved designing and implementing a relational database. We created an Entity-Relationship Diagram (ERD) to visualize the relationships between the tables, then wrote a database schema in SQL to create tables with proper data types, primary and foreign keys, and constraints. After creating the database and tables in PostgreSQL, we imported the data from the CSV files into the corresponding tables and verified the successful import by running SELECT queries on each table.
+Throughout the project, we ensured proper data transformations, handled relationships between the tables, and followed the given instructions to complete each step effectively.
+
+------------------------------------------------------
 ## Instructions
 
 The instructions for this mini project are divided into the following subsections:
